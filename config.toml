@@ -1,0 +1,11 @@
+[guild_ids]
+guild_id = 1024269429229490186
+suggestion_box = 1048141369320935465
+suggestions = 1048141447779594272
+
+[owners]
+user1 = 0 
+user2 = 0
+
+[image]
+sugbot_image = "suggestions.png"
