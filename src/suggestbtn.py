@@ -1,5 +1,4 @@
 import discord
-
 from src.suggestmodal import SuggestModal
 
 

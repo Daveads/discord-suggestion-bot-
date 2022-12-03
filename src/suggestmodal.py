@@ -35,7 +35,7 @@ class SuggestModal(discord.ui.Modal, title='Feedback'):
         embed.add_field(name="Suggestion", value=f"{self.suggestion.value}" ,inline=False)
 
         embed.add_field(name="How would it benefit this server?", value=f"{self.reason.value}" ,inline=False)
-        embed.set_footer(text=f"{interaction.guild.name}",icon_url=interaction.guild.icon.url)
+        embed.set_footer(text=f"Powered by {interaction.guild.name}",icon_url=interaction.guild.icon.url)
 
         sendre = await chn.send(embed=embed)
 

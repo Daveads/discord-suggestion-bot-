@@ -6,15 +6,6 @@ except ModuleNotFoundError:
     import tomli as tomllib
 
 
-
-
-"""
-for i in data['channels_id']:
-    #print(i)
-    ""
-"""
-
-
 class BotConfigs:
     def __init__ (self):
         with open("config.toml", "rb") as f:
@@ -26,13 +17,6 @@ class BotConfigs:
 
 
     def guild_ids(self, role):
-
-        if role == 'guild_id':
-            return self.data['guild_ids']['guild_id']
-
-
-        elif role == 'suggestion_box':
-            return self.data['guild_ids']['suggestion_box']
-
-        elif role == 'suggestions':
-            return self.data['guild_ids']['suggestions']
+        
+        if role in self.data['guild_ids']:
+            return self.data['guild_ids'][role]
