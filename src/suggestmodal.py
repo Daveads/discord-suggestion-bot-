@@ -30,7 +30,7 @@ class SuggestModal(discord.ui.Modal, title='Feedback'):
 
         embed = discord.Embed(color=discord.Color.blue())
         embed.set_author(name=f"{interaction.user}", icon_url=f"{interaction.user.avatar}")
-        embed.add_field(name="**New suggestion**", value=f"Suggested by {interaction.user.mention}" ,inline=False)
+        embed.add_field(name="**New suggestion**", value=f"Suggested by {interaction.user.mention} ID: **{interaction.user.id}**" ,inline=False)
 
         embed.add_field(name="Suggestion", value=f"{self.suggestion.value}" ,inline=False)
 
