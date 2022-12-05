@@ -46,7 +46,7 @@ class SuggestModal(discord.ui.Modal, title='Feedback'):
 
 
         await interaction.response.send_message(f'Suggestion sent')
-        await asyncio.sleep(20)
+        await asyncio.sleep(10)
         await interaction.delete_original_response()
         
 
